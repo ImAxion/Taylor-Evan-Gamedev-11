@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+T1AO7-Objects-Evan
+</title>
+</head>
+<body>
+<center><b> T1A02-forms-Evan</b> </center> <br>
+<br>
+<script>
+
+function myStudent(myAge, myName, myImage){
+this.myStudentAge = myAge
+this.myStudentName = myName
+this.myStudentImage = myImage
+this.myShowInfo = function(){
+ document.getElementById('myDiv1').innerHTML += 'my name is ' + this.myStudentName + ' <br> '
+ };
+ 
+ }
+ </script>
+ 
+ <input type=button value="Set Ben" onclick="{
+ myBen = new myStudent(20, 'Ben', 'http')
+ }">
+ 
+ <input type=button value="Show Ben" onclick="{
+ myBen.myShowInfo()
+ }">
+ 
+ <input type=button value="Set and Show Mary" onclick="{
+ myMary = new myStudent(18, 'Mary', 'http')
+ myMary.myShowInfo()
+ }">
+ <div id='myDiv1'>...<br></div> 

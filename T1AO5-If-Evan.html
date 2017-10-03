@@ -1,0 +1,29 @@
+<h2 align=center>T1AO5-If-Evan</h2>
+<input id="myText01" type=number placeholder="7"><br>
+<div id="myDiv01" style="font-size:40px;color;red;">....</div><br>
+<input type=button value="first" onClick="{
+ myNumber = document.getElementById('myText01').value 
+ document.getElementById('myDiv01').innerHTML =''
+ if (myNumber ==7) {document.getElementById('myDiv01').innerHTML+='You entered a 7<br>'}
+ if (myNumber <9) {document.getElementById('myDiv01').innerHTML+='Less than 9<br>'}
+ if (myNumber <3) {document.getElementById('myDiv01').innerHTML+='Less than 3<br>'}
+ }">
+ <br>
+ <br>
+<button onclick="myFunction()">Is it day or evening?</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+}
+</script> 
+ 
