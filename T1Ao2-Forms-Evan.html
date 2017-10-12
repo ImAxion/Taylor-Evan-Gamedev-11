@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>
+AT01-HTML FORMS
+</title>
+</head>
+<body>
+T1A02-forms-Evan <br>
+<center> <b> <font size=24> <u> Survey </font> </u> </center>
+<br>
+<ol>
+<form action="/action_page.php" autocomplete="on">
+<li>  First name:<input type="text" name="fname"><br>
+<li>  Last name: <input type="text" name="lname"><br>
+  <form action="/action_page.php">
+<li>  Password: <input type="password" name="pwd" maxlength="8"><br>
+<li>  E-mail: <input type="email" name="email" autocomplete="off"><br>
+
+</form>
+
+<p>Fill in every answer you can.</p>
+<form>
+<br><li> Please select your level of schooling
+<br> <input type=checkbox> Middle School <br>
+<input type= checkbox> High/Secondary School <br> 
+<input type= checkbox> University/ Collage <br>
+</form>
+<form>
+<br><li> <form action="/action_page.php">
+  Birthday: <input type="date" name="bday">
+<br>
+<br>
+<br><li> Select what area you live in. 
+<br> <select>
+  <option value=""></option>
+  <option value="Urban">Urban</option>
+  <option value="Suburban">Suburban</option>
+  <option value="Rural">Rural</option>
+ </select>
+<br>
+<br> <form action="/action_page.php">
+<li>  Select your favorite color: <input type="color" name="favcolor"><br>
+<br>
+<br> <li> <input type="range" name="points" min="0" max="10"> <br> 
+<li> <form action="/action_page.php">
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br>
+
+
+
+
+<br>
+<br>
+<button type="button" onclick="alert('Thank you for doing our servey')">Submit</button>
