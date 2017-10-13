@@ -1,16 +1,18 @@
 <h2 align=center>T1AO5-If-Evan</h2>
 <input id="myText01" type=number placeholder="7"><br>
+
 <div id="myDiv01" style="font-size:40px;color;red;">....</div><br>
-<div id="MyNumdiv" style="font-size:40px; color:red;">...</div>
+
+
 <input type=button value="first" onClick="{
  myNumber = document.getElementById('myText01').value 
  document.getElementById('myDiv01').innerHTML =''
- if (myNumber ==7) {document.getElementById('myDiv01').innerHTML+='You entered a 7<br>'}
- if (myNumber <9) {document.getElementById('myDiv01').innerHTML+='Less than 9<br>'}
- if (myNumber <3) {document.getElementById('myDiv01').innerHTML+='Less than 3<br>'}
- if(myNumber<=-3){document.getElementById('MyNumdiv').innerHTML+='This is a negative<br>'}
-if(myNumber>=30){document.getElementById('MyNumdiv').innerHTML+='This number is more than 30<br>'}
-if((myNumber!=-7)&&(myNumber<0)){document.getElementById('MyNumdiv').innerHTML+='You entered a negative number<br>'}
+ if (myNumber == 7) {document.getElementById('myDiv01').innerHTML+='You entered a 7<br>'}
+ if (myNumber < 9) {document.getElementById('myDiv01').innerHTML+='Less than 9<br>'}
+ if (myNumber < 3) {document.getElementById('myDiv01').innerHTML+='Less than 3<br>'}
+ if(myNumber <= -3){document.getElementById('myDiv01').innerHTML+='This is a negative<br>'}
+if(myNumber >=30 ){document.getElementById('myDiv01').innerHTML+='This number is more than 30<br>'}
+if((myNumber != -7)&&(myNumber<0)){document.getElementById('myDiv01').innerHTML+='You entered a negative number<br>'}
  
  }">
  <br>
@@ -30,5 +32,5 @@ function myFunction() {
     }
     document.getElementById("demo").innerHTML = greeting;
 }
-</script> 
+</script>
  
