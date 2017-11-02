@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>
+HTML TAO14-Calculator-Evan
+</title>
+</head>
+<body>
+<h2 align=center>Calculator by Evan</h1>
+
+
+enter values for the first box, add a sign, then enter a value for thrid box <br>
+<input type="number" id="myText01" value="3" onfocus="{
+   document.myFocus = 1;
+
+}"> <input type="text" id="myText02" size=3 onfocus="{
+   document.myFocus = 2;   
+   }">
+   
+   <input type="number" id="myText03" value="2" onfocus="{
+   document.myFocus = 3;
+<br>
+<br>
+<br>
+      <form id="calculator" name="calculator">
+	  <br>
+	  <br>
+          <input type="button" id="myOne" value="1" 
+		  onclick="{
+			if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 1*1}
+			else{
+            document.getElementById('myText03').value += 1*1
+              }
+		  }">
+		  
+		    
+          <input type="button" id="myTwo" value="2"
+		  onclick="{
+			if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 2}
+			else{
+            document.getElementById('myText03').value += 2
+              }
+		  }">
+		  
+		  <input type="button" id="myThree" value="3"
+		  onclick="{
+		if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 3}
+			else{
+            document.getElementById('myText03').value += 3
+              }
+		  }">
+		  
+          <input type="button" id="myAdd" value="+"
+		  onclick="{
+			
+			    document.getElementById('myText02').value = '+'
+						  
+		  }">
+		  
+            <br>
+          <input type="button" id="myFour" value="4"
+		  onclick="{
+			if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 4}
+			else{
+            document.getElementById('myText03').value += 4
+              }
+		  }">
+		  
+		  <input type="button" id="myFive" value="5"
+		  onclick="{
+		if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 5}
+			else{
+            document.getElementById('myText03').value += 5
+              }
+		  }">
+		  
+		  <input type="button" id="mySix" value="6"
+		  onclick="{
+			if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 6}
+			else{
+            document.getElementById('myText03').value += 6
+              }
+		  }">
+		  
+          <input type="button" id="mySubtract" value="-"
+		  onclick="{
+			
+			    document.getElementById('myText02').value = '-'
+						  
+		  }">
+		  
+            <br>
+          <input type="button" id="mySeven" value="7"
+		  onclick="{
+			if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 7}
+			else{
+            document.getElementById('myText03').value += 7
+              }
+		  }">
+		  
+		  <input type="button" id="myEight" value="8"
+		  onclick="{
+			if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 8}
+			else{
+            document.getElementById('myText03').value += 8
+              }
+		  }">
+		  
+		  <input type="button" id="myNine" value="9"
+		  onclick="{
+		if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 9}
+			else{
+            document.getElementById('myText03').value += 9
+              }
+		  }">
+		  
+		  
+          <input type="button" id="myMultiply" value="x"
+		  onclick="{
+			
+			    document.getElementById('myText02').value = '*'
+			
+			  
+		  }">
+		  
+          <input type="button" id="myEquals" value="=" 
+		  onClick="{
+		  
+		  myNum1 = parseFloat(document.getElementById('myText01').value)
+          mySign = document.getElementById('myText02').value
+          myNum2 = parseFloat(document.getElementById('myText03').value)
+   
+		myTotal = 0
+		
+		if (mySign == '+'){myTotal = myNum1 + myNum2 }
+		if (mySign == '-'){myTotal = myNum1 - myNum2 }
+		if (mySign == '*'){myTotal = myNum1 * myNum2 }
+		if (mySign == '÷'){myTotal = myNum1 / myNum2 }
+		
+   
+   
+   
+   
+   document.getElementById('myDiv01').innerHTML  +=  myNum1 + ' ' +  mySign + ' '  + myNum2 + ' ' + ' = ' + myTotal + '<br>'
+
+
+         }" >
+		 <br>
+		 <input type="button" id="myDivide" value="÷"
+		  onclick="{
+			
+			    document.getElementById('myText02').value = '÷'
+						  
+		  }">
+		 
+		 
+		 
+		 
+		  <input type="button" id="myZero" value="0"
+		  onclick="{
+		if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += 0}
+			else{
+            document.getElementById('myText03').value += 0
+              }
+		  }">
+		 
+<input type=button value="clear" onClick="{
+		 document.getElementById('myText01').value= ''
+		 document.getElementById('myText02').value= ''
+		 document.getElementById('myText03').value= ''
+}">		 
+
+		 <br>
+		  <input type=button value="Clear Output" onClick="{  
+      document.getElementById('myDiv01').innerHTML =  ''
+	  
+	  }">
+		 
+<br><br>		 
+<div id="myDiv01"></div>		 
+		 			 

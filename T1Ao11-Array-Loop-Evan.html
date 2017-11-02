@@ -13,12 +13,18 @@ x=document.getElementById('mytext01').value
 
 
 <input type=button value="make Array" onClick="{
- alert('make')
+  myArray=new Array()
+  for(myLoop=1;myLoop<=5;myLoop++){
+    myArray[myLoop]=Math.round(Math.random()*10)
+ }
 }"><br>
 
-
 <input type=button value="Show Array" onClick="{
- alert('show')
- }"><br>
+  for(myLoop=1;myLoop<=5;myLoop++){
+     document.getElementById('myDiv01').innerHTML += myArray[myLoop]+'<br>'
+}
 
-<div id="myDiv01"<...</div>  
+
+ }"><br> 
+ 
+<div id="myDiv01">...</div>  

@@ -1,0 +1,147 @@
+<h2 align=center>Events by Evan</h1>
+
+<html>
+<head>
+<style>
+div {
+ 
+	}
+
+</style>
+</head>
+<body>
+
+<div onscroll="myScroll()" style="   border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    overflow: scroll;"> Navy Seal Copypasta<br>
+What did you just say about me? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I’m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you out with precision the likes of which has never been seen before on this Earth, mark my words. You think you can get away with saying that to me over the Internet? Think again. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little sh*t. If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will sh*t fury all over you and you will drown in it. You’re dead, kiddo.'</div>
+
+<p>Scrolled <span id="myDivo1">0</span> times.</p>
+
+<script>
+var x = 0;
+function myScroll() {
+    document.getElementById("myDivo1").innerHTML = x += 1;
+}
+</script>
+
+<body onkeydown="{
+       document.getElementById('myDiv01').innerHTML = 'onkeydown event sent the letter '+String.fromCharCode(event.keyCode)
+  }">
+
+<ol>
+
+<li> type a key
+
+<li><input type=button value="onClick" onclick="{
+
+    
+    document.getElementById('myDiv01').innerHTML =  'onClick event activated'
+  
+}">
+
+<li><input type=button value="onMouseOver" onMouseOver="{
+
+    
+   document.getElementById('myDiv01').innerHTML =  'onMouseOver event activated'
+  
+}">
+<br>
+<div id="myDiv01">...</div>
+<br>
+
+<input type="text" value="Try to copy this text"  onCopy="{
+
+  
+ 
+   document.getElementById('myDiv02').innerHTML =  'You copied text!'
+}">
+
+<div id="myDiv02">...</div>
+<br>
+<p>Drag the "Drag me!" to the rectangles:</p>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="Hey it's here now">Drag me!</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+<script>
+function dragStart(event) {
+    event.dataTransfer.setData("Text", event.target.id);
+    document.getElementById("myDivo3").innerHTML = "Started to drag the p element";
+}
+
+function dragEnd(event) {
+    document.getElementById("myDivo3").innerHTML = "Finished dragging the p element.";
+}
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+<input type="text" value="">
+<br>
+<div id="myDivo3">...</div>
+<br>
+<br>
+
+Type stuff: <input type="text" id="fname" onblur="myBlur()">
+
+<p>Type something in then click outside of the textbox.</p>
+
+<script>
+function myBlur() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+</script>
+<br>
+<br>
+Click: <input type="text" onfocus="myFocus(this)">
+
+<p>Click on the text box and watch what happens.</p>
+
+<script>
+function myFocus(x) {
+    x.style.background = "purple";
+}
+</script>
+<br>
+<br>
+<input type="text" onpaste="myPaste()" value="Try to paste something in here" size="40">
+
+<div id="myDivo4">...</div>
+
+<script>
+function myPaste() {
+    document.getElementById("myDivo4").innerHTML = "You pasted text!";
+}
+</script>
+<br>
+<br>
+<input type="text" oncut="myCut()" value="Try to cut this text (ctrl-x)">
+
+<div id="myDivo5"></div>
+
+<script>
+function myCut() {
+    document.getElementById("myDivo5").innerHTML = "You cut text!";
+}
+</script>
+
+<br>
+
+
+
