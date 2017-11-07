@@ -8,15 +8,15 @@ HTML TAO14-Calculator-Evan
 <h2 align=center>Calculator by Evan</h1>
 
 
-enter values for the first box, add a sign, then enter a value for thrid box <br>
-<input type="number" id="myText01" value="3" onfocus="{
+Enter values for the first box, add a sign, then enter a value for third box. <br>
+<input type="text" id="myText01" readonly value="3" onfocus="{
    document.myFocus = 1;
 
-}"> <input type="text" id="myText02" size=3 onfocus="{
+}"> <input type="text" id="myText02" readonly size=3 onfocus="{
    document.myFocus = 2;   
    }">
    
-   <input type="number" id="myText03" value="2" onfocus="{
+   <input type="text" id="myText03" readonly value="2" onfocus="{
    document.myFocus = 3;
 <br>
 <br>
@@ -59,6 +59,25 @@ enter values for the first box, add a sign, then enter a value for thrid box <br
 						  
 		  }">
 		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  <input type="button" id="myDecimal" value="."
+		  onclick="{
+		if(document.getElementById('myText02').value == ''){
+            document.getElementById('myText01').value += '.' }
+			else{
+            document.getElementById('myText03').value += '.'
+              }
+		  }">
+		  
+		  
+		  
+		  
+		  
             <br>
           <input type="button" id="myFour" value="4"
 		  onclick="{
@@ -91,6 +110,21 @@ enter values for the first box, add a sign, then enter a value for thrid box <br
 		  onclick="{
 			
 			    document.getElementById('myText02').value = '-'
+						  
+		  }">
+		  
+		  <input type="button" id="mySquare" value="Sq"
+		  onclick="{
+			
+			
+		    myNum1 = parseFloat(document.getElementById('myText01').value)
+				
+		    myTotal = myNum1 * myNum1 				
+				
+			document.getElementById('myText01').value = myTotal
+			
+			 document.getElementById('myDiv01').innerHTML  =  myNum1 + ' squared = '+ myTotal + '<br>' + document.getElementById('myDiv01').innerHTML
+	
 						  
 		  }">
 		  
@@ -143,7 +177,9 @@ enter values for the first box, add a sign, then enter a value for thrid box <br
 		if (mySign == '+'){myTotal = myNum1 + myNum2 }
 		if (mySign == '-'){myTotal = myNum1 - myNum2 }
 		if (mySign == '*'){myTotal = myNum1 * myNum2 }
-		if (mySign == '÷'){myTotal = myNum1 / myNum2 }
+		if (mySign == '/'){myTotal = myNum1 / myNum2 }		
+
+		
 		
    
    
@@ -154,10 +190,10 @@ enter values for the first box, add a sign, then enter a value for thrid box <br
 
          }" >
 		 <br>
-		 <input type="button" id="myDivide" value="÷"
+		 <input type="button" id="myDivide" value="/"
 		  onclick="{
 			
-			    document.getElementById('myText02').value = '÷'
+			    document.getElementById('myText02').value = '/'
 						  
 		  }">
 		 
@@ -186,5 +222,4 @@ enter values for the first box, add a sign, then enter a value for thrid box <br
 	  }">
 		 
 <br><br>		 
-<div id="myDiv01"></div>		 
-		 			 
+<div id="myDiv01"></div>
