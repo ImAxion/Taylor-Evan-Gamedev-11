@@ -15,7 +15,7 @@ div {
     width: 300px;
     height: 300px;
     overflow: scroll;"> Navy Seal Copypasta<br>
-What did you just say about me? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I’m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you out with precision the likes of which has never been seen before on this Earth, mark my words. You think you can get away with saying that to me over the Internet? Think again. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent. If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will crap fury all over you and you will drown in it. You’re dead, kiddo.'</div>
+What did you just say about me? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I’m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you out with precision the likes of which has never been seen before on this Earth, mark my words. You think you can get away with saying that to me over the Internet? Think again. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little sh*t. If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will sh*t fury all over you and you will drown in it. You’re dead, kiddo.'</div>
 
 <p>Scrolled <span id="myDivo1">0</span> times.</p>
 
@@ -140,8 +140,106 @@ function myCut() {
     document.getElementById("myDivo5").innerHTML = "You cut text!";
 }
 </script>
+<br>
+<br>
+<img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p> hover over the image </p>
+
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
 
 <br>
+<body onresize="myResize()">
+<p>Try to resize the browser window to display the windows height and width.</p>
+
+<p id="myDiv06"></p>
+
+<script>
+function myResize() {
+    var w = window.outerWidth;
+    var h = window.outerHeight;
+    var txt = "Window size: width=" + w + ", height=" + h;
+    document.getElementById("myDiv06").innerHTML = txt;
+}
+</script>
+<br>
+<br>
+<p>Write something in the text field. </p>
+
+<input type="text" id="myInput" oninput="myInput()">
+
+<p id="myDiv07"></p>
+
+<script>
+function myInput() {
+    var x = document.getElementById("myInput").value;
+    document.getElementById("myDiv07").innerHTML = "You wrote: " + x;
+}
+</script>
+<br>
+<br>
+
+<p>Write in the text box then click Submit, (will relaod page).</p>
+
+<form onsubmit="mySubmit()">
+  Enter text: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function mySubmit() {
+    alert("The form was submitted");
+}
+</script>
+<br>
+<br>
+
+Select the text: <input type="text" value="Hello world!" onselect="mySelect()">
+
+<script>
+function mySelect() {
+    alert("You selected some text!");
+}
+</script>
+<br>
+<br>
+
+Hover over the text and scroll.
+
+<div id="myDiv08">This example uses the addEventListener() method to attach a "wheel" event to a Div. Roll the mouse wheel either up or down</div>
+
+<script>
+document.getElementById("myDiv08").addEventListener("wheel", myOnwheel);
+
+function myOnwheel() {
+    this.style.fontSize = "35px";
+}
+</script>
+<br>
+<br>
+
+<p>Click the button to find out if the onclick event is a bubbling event.</p>
+
+<button onclick="myBubbles(event)">Try it</button>
+
+<p id="myDiv09"></p>
+
+<script>
+function myBubbles(event) { 
+    var x = event.bubbles;
+    document.getElementById("myDiv09").innerHTML = x;
+}
+</script>
 
 
 
