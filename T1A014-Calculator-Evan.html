@@ -177,8 +177,8 @@ Enter values for the first box, add a sign, then enter a value for third box. <b
 		if (mySign == '+'){myTotal = myNum1 + myNum2 }
 		if (mySign == '-'){myTotal = myNum1 - myNum2 }
 		if (mySign == '*'){myTotal = myNum1 * myNum2 }
-		if (mySign == '/'){myTotal = myNum1 / myNum2 }		
-
+		if (mySign == '/'){myTotal = myNum1 / myNum2 }
+		
 		
 		
    
@@ -208,6 +208,18 @@ Enter values for the first box, add a sign, then enter a value for third box. <b
             document.getElementById('myText03').value += 0
               }
 		  }">
+		  
+		  
+		  	  <input type="button" id="mySqrt" value="Sqrt"
+  onclick="{
+  
+      myNum1 = parseFloat(document.getElementById('myText01').value)
+				
+		    myTotal = Math.sqrt(document.getElementById('myText01').value)
+			document.getElementById('myText01').value = myTotal
+			 document.getElementById('myDiv01').innerHTML  =  myNum1 + ' Math.sqrt = '+ myTotal + '<br>' + document.getElementById('myDiv01').innerHTML
+
+  }">
 		 
 <input type=button value="clear" onClick="{
 		 document.getElementById('myText01').value= ''
@@ -220,6 +232,10 @@ Enter values for the first box, add a sign, then enter a value for third box. <b
       document.getElementById('myDiv01').innerHTML =  ''
 	  
 	  }">
+	  
+
+  
 		 
 <br><br>		 
-<div id="myDiv01"></div>
+<div id="myDiv01"></div>		 
+		 			 
