@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>
+HTML TAO15-Bonus-Pop-Up-Evan
+</title>
+</head>
+<body>
+<h2 align=center>Bonus Pop-Up by Evan</h1>
+
+this is a webpage with stuff on it.
+<br>
+<img width=600 src="https://www.dexerto.com/app/uploads/2017/08/stage-esports-call-of-duty-cod-championship-main-stage-esports-626x314.jpg" onMouseover="{alert('youre a winner')}" >
+<br>
+<br> here's a list of 4 popular Esports currently.
+<ol>
+<li> Dota 2
+<li> League of Legends
+<li> CS:GO
+<li> Call of Duty
+</ol>
+<br>
+<br>
+<script>
+
+function myStudent(myAge, myName, myImage){
+this.myStudentAge = myAge
+this.myStudentName = myName
+this.myStudentImage = myImage
+this.myShowInfo = function(){
+ document.getElementById('myDiv1').innerHTML += 'my name is ' + this.myStudentName + ' <br> '
+ };
+ 
+ }
+ </script>
+ 
+ <input type=button value="Joe" onclick="{
+ myBen = new myStudent(20, 'Steven', 'http')
+ }">
+ 
+ <input type=button value="Show Steven" onclick="{
+ myBen.myShowInfo()
+ }">
+ 
+ <input type=button value="Set and Show Rob" onclick="{
+ myMary = new myStudent(18, 'Rob', 'http')
+ myMary.myShowInfo()
+ }">
+ 
+  <div id='myDiv1'>...<br></div>
+ <br>
+ <br>
+ 
+ <p>Drag the "Drag me!" to the rectangles:</p>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="Hey it's here now">Drag me!</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+<script>
+function dragStart(event) {
+    event.dataTransfer.setData("Text", event.target.id);
+    document.getElementById("myDivo3").innerHTML = "Started to drag the element";
+}
+
+function dragEnd(event) {
+    document.getElementById("myDivo3").innerHTML = "Finished dragging the element.";
+}
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+<input type="text" value="">
+<br>
+<div id="myDivo3">...</div>
+
+<br>
+<br>
+
+<button onclick="myFunction()">Is it day or evening?</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+<br>
+<br>
+
+<form>
+<br> 
+<br> <center> <button type="button" onclick="alert('36 million people watched the League of Legands finals in 2016 compared to that years NBA finals of 31 million.')">Click for an interesting fact</button> </center>
+ 
+ 
+ 
+ 
