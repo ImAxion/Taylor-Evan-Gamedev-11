@@ -1,0 +1,26 @@
+<body id="myBody" style=" background-size: cover; background-image: url('http://33.media.tumblr.com/c35e05f41967cbe55b7255cce64a3585/tumblr_n5gtz4Xgj01rkcjj5o1_500.gif'); background-repeat : repeat-x; ">
+
+<input type=button value="Background Go" onclick="{
+       myX = -5000
+       myY = 0
+       myCounter1 = setInterval(function(){   
+             myX += -8;
+             myY += -4;
+             document.getElementById('myBody').style.backgroundPosition = myX + 'px';
+
+      }, 30);    // every 30 milliseconds
+
+}">
+
+
+<input type=button value="Background Stop" onclick="{
+   clearInterval( myCounter1)
+   alert('Background stopped at position ' +document.getElementById('myBody').style.backgroundPosition)
+
+}">
+</body>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://pre00.deviantart.net/853c/th/pre/f/2011/148/2/6/naruto_rasengan_pixel_art_by_09curtis09-d3hepz1.png" height="400px" width="400px">
