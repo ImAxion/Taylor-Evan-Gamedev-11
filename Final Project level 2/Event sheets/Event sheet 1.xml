@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="949941674722218">
+            <conditions>
+                <condition id="2" name="Key is down" sid="229868685440093" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="616713464970714" type="Player1">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="Speed">500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="697330587833719">
+            <conditions>
+                <condition id="3" name="On key released" sid="593683717458572" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="954150506253920" type="Player1" />
+            </actions>
+        </event-block>
+        <event-block sid="928688896889996">
+            <conditions>
+                <condition id="2" name="Key is down" sid="947061121300951" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="849344438267225" type="Player1">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">-500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="615809202130068">
+            <conditions>
+                <condition id="3" name="On key released" sid="784965871484897" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="894027161165382" type="Player1" />
+            </actions>
+        </event-block>
+        <event-block sid="788125474373887">
+            <conditions>
+                <condition id="2" name="Key is down" sid="817951212888625" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="930932505866101" type="Player1">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="201669322921404">
+            <conditions>
+                <condition id="3" name="On key released" sid="729943492341121" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="681201091951199" type="Player1" />
+            </actions>
+        </event-block>
+        <event-block sid="191032580269242">
+            <conditions>
+                <condition id="2" name="Key is down" sid="553248446606635" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="757434226625194" type="Player1">
+                    <param id="0" name="Which">1</param>
+                    <param id="1" name="Speed">-500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="462801493188367">
+            <conditions>
+                <condition id="3" name="On key released" sid="675062058790073" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="704770728920175" type="Player1" />
+            </actions>
+        </event-block>
+        <event-block sid="173961898329534">
+            <conditions>
+                <condition id="2" name="Key is down" sid="579691854371837" type="Keyboard">
+                    <param id="0" name="Key">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="926119659196676" type="Player2">
+                    <param id="0" name="Which">1</param>
+                    <param id="1" name="Speed">-500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="803212552629379">
+            <conditions>
+                <condition id="3" name="On key released" sid="627119561367893" type="Keyboard">
+                    <param id="0" name="Key">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="711062926354897" type="Player2" />
+            </actions>
+        </event-block>
+        <event-block sid="944473336365278">
+            <conditions>
+                <condition id="2" name="Key is down" sid="531459563380403" type="Keyboard">
+                    <param id="0" name="Key">104</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="874252740702382" type="Player2">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">-500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="609799344770593">
+            <conditions>
+                <condition id="3" name="On key released" sid="122082885725515" type="Keyboard">
+                    <param id="0" name="Key">104</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="159185226960938" type="Player2" />
+            </actions>
+        </event-block>
+        <event-block sid="807876050458996">
+            <conditions>
+                <condition id="2" name="Key is down" sid="380181089489667" type="Keyboard">
+                    <param id="0" name="Key">101</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="964775417049759" type="Player2">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Speed">500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="636791722816543">
+            <conditions>
+                <condition id="3" name="On key released" sid="876322327502514" type="Keyboard">
+                    <param id="0" name="Key">101</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="658621516125338" type="Player2" />
+            </actions>
+        </event-block>
+        <event-block sid="730313810552813">
+            <conditions>
+                <condition id="2" name="Key is down" sid="351327117954691" type="Keyboard">
+                    <param id="0" name="Key">102</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="2" name="Set speed" sid="516949037877589" type="Player2">
+                    <param id="0" name="Which">1</param>
+                    <param id="1" name="Speed">500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="707650278456013">
+            <conditions>
+                <condition id="3" name="On key released" sid="970965560031607" type="Keyboard">
+                    <param id="0" name="Key">102</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="0" name="Stop" sid="390491997214264" type="Player2" />
+            </actions>
+        </event-block>
+        <event-block sid="226779591169890">
+            <conditions>
+                <condition behavior="Solid" id="0" name="Is enabled" sid="967996519418491" type="9patch" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="10" name="Push out solid" sid="350420729571108" type="Player1">
+                    <param id="0" name="Direction">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="257042535109024">
+            <conditions>
+                <condition behavior="Solid" id="0" name="Is enabled" sid="598707589862035" type="9patch" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="10" name="Push out solid" sid="295432546868879" type="Player2">
+                    <param id="0" name="Direction">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-group description="" sid="749298230544128" title="Collisions" />
+            </sub-events>
+        </event-block>
+        <event-block sid="377507360474179">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="843146090609277" type="Player1">
+                    <param id="0" name="Object">Player2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="10" name="Push out solid" sid="387893576024726" type="Player1">
+                    <param id="0" name="Direction">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="688279070143244">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="892003936252560" type="Player2">
+                    <param id="0" name="Object">Player1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="10" name="Push out solid" sid="620519251474779" type="Player2">
+                    <param id="0" name="Direction">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="870486534857485">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="227336444934635" type="Player1">
+                    <param id="0" name="Object">Border</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="10" name="Push out solid" sid="481713048373302" type="Player1">
+                    <param id="0" name="Direction">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="334728008895416">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="148950910713201" type="Player2">
+                    <param id="0" name="Object">Border</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="10" name="Push out solid" sid="633573203835147" type="Player2">
+                    <param id="0" name="Direction">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="725034701799835">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="813626266357415" type="Player1">
+                    <param id="0" name="Object">Player2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="10" name="Push out solid" sid="481627813788970" type="Player1">
+                    <param id="0" name="Direction">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="378937346028675">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="711240920035699" type="Player2">
+                    <param id="0" name="Object">Player1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="10" name="Push out solid" sid="476289271793912" type="Player2">
+                    <param id="0" name="Direction">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>Collision with player 2 pushes player 1 back instead of stopping.</comment>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="796447898424562" title="Bullets" />
+        <event-block sid="402661055661550">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="527879883417678" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="127629220801980" type="Bullet1">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="932555054178931" type="Bullet2">
+                    <param id="0" name="Speed">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="547118902532369">
+            <conditions>
+                <condition id="2" name="Key is down" sid="653413286117222" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="7" name="Set rate of fire" sid="827277717109190" type="Player1">
+                    <param id="0" name="Rate of fire">150</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

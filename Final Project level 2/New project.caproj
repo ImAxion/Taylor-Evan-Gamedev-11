@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>25000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="649944099639982">
+            <plugin id="TiledBg" />
+            <texture original-source="H:\Documents\Game-Dev-2017-Evan\Nebula 2.jpg" />
+        </object-type>
+        <object-type name="P1HP" sid="510832162795518">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="P2HP" sid="551323430016048">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Player1" sid="443032372937335">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="851617919053591">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="996372511603290">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="555686585946118">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713430110701407" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500437" original-source="H:\Documents\Game-Dev-2017-Evan\Fox Mccloud.png">
+                        <collision-poly>
+                            <point x="0.43125" y="0.30131" />
+                            <point x="0.5" y="0.0995633" />
+                            <point x="0.8925" y="0.0751092" />
+                            <point x="0.86625" y="0.499563" />
+                            <point x="0.5725" y="0.70131" />
+                            <point x="0.5" y="0.968559" />
+                            <point x="0.28125" y="0.803493" />
+                            <point x="0.08625" y="0.499563" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="406492536619421">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Player2" sid="863716567665983">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="849151591676350">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="123855276560456">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802858217411943" speed="5">
+                    <frame duration="1" hotspotX="0.5025" hotspotY="0.502183" original-source="H:\Documents\Game-Dev-2017-Evan\Slippy Toad.png">
+                        <collision-poly>
+                            <point x="0.270142" y="0.220077" />
+                            <point x="0.49763" y="0.0579151" />
+                            <point x="0.654028" y="0.281853" />
+                            <point x="0.725118" y="0.498069" />
+                            <point x="0.597156" y="0.671815" />
+                            <point x="0.49763" y="0.938224" />
+                            <point x="0.364929" y="0.702703" />
+                            <point x="0.331754" y="0.498069" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="9patch" sid="898985347054392">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="577719716703773">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="H:\Documents\Game-Dev-2017-Evan\mario-clipart-brick.png" />
+        </object-type>
+        <object-type name="9patch2" sid="197201920017422">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="Border" sid="296634232085801">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="797373645408230">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Bullet1" sid="390800055595626">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="162157521857722">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="110516436090888">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="388746463690411" speed="5">
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.5" original-source="H:\Documents\Game-Dev-2017-Evan\LaserShot.png">
+                        <collision-poly>
+                            <point x="0.242588" y="0.416667" />
+                            <point x="0.493261" y="0.5" />
+                            <point x="0.242588" y="0.583333" />
+                            <point x="0.110512" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet2" sid="215591308318955">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="742489189409754">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="391529432590037">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112290379756173" speed="5">
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.5" original-source="H:\Documents\Game-Dev-2017-Evan\LaserShot2.png">
+                        <collision-poly>
+                            <point x="0.498652" y="0.425926" />
+                            <point x="0.770889" y="0.393519" />
+                            <point x="0.962264" y="0.5" />
+                            <point x="0.770889" y="0.606481" />
+                            <point x="0.498652" y="0.574074" />
+                            <point x="0.485175" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="4" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
