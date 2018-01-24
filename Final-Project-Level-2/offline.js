@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1516228154,
+	"version": 1516819265,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -13,6 +13,10 @@
 		"images/border.png",
 		"images/bullet1-sheet0.png",
 		"images/bullet2-sheet0.png",
+		"images/9patch4.png",
+		"images/9patch5.png",
+		"media/♫tetris theme♫ (dubstep remix).m4a",
+		"media/♫tetris theme♫ (dubstep remix).ogg",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
